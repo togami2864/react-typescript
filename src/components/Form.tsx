@@ -21,7 +21,7 @@ const Form: React.FC<Props> = ({ value, setValue }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form id='add' onSubmit={handleSubmit}>
             <input
                 type='text'
                 placeholder='add todo'
@@ -30,6 +30,7 @@ const Form: React.FC<Props> = ({ value, setValue }) => {
                 }}
                 value={value}
             />
+            <button type="submit" form='add'>送信</button>
         </form>
     )
 }
